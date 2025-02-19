@@ -35,7 +35,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.logoutButton.setOnClickListener(){
-            finish()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
         binding.buttonCalculator.setOnClickListener {
